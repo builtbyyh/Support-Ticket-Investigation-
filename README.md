@@ -15,4 +15,16 @@ The database consists of 4 linked tables:
 - **agents** — The support team members assigned to resolve tickets
 - **categories** — The table used to classify each of ticket categories specific to SaaS support
 
-### Entity relationship diagram
+#### Below you will find the Entity Relationship Diagram (ERD):
+
+#### Entity relationship diagram
+<img src="helpdesk_erd.PNG" width="600" height="600">
+
+## How to run this project
+
+1. Install PostgreSQL and open pgAdmin
+2. Create a new database called `support_db` on your PostgreSQL 17 server
+3. Select the `support_db` database and then open the Query Tool and run `schema/create_tables.sql`
+4. After confirming the tables exist, run `data/insert_data.sql` to populate the tables
+5. To analyse the data, run `queries/analysis.sql`
+6. To view the data in a dashboard format run run `queries/views.sql`
