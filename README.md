@@ -1,6 +1,18 @@
 # Support-Ticket-Investigation
+In this project I created a relational database using PostgreSQL to model a SaaS application support helpdesk system, I designed and analysed the database to demonstrate my SQL skills.
 
-## What is this project is about?
+## Project Overview
+This project simulates a real-world SaaS support helpdesk database containing over 170 support tickets raised by 100 users across 6 departments. These tickets are handled by a team of 4 agents, tickets can be raised in 8 issue categories. The data I used was designed to reflect the types of issues encountered in a SaaS support environment such as login failures, licensing problems, integration errors and user management requests.
 
 ## Tools used
-![Image of PostgreSQL logo](https://images.ctfassets.net/6yom6slo28h2/fJUJrqHAzWweaJZvNXgWS/446631a4e2f0cc825292c982c12e173a/postgresql.jpg?w=150&h=300&fl=progressive&q=100&fm=jpg)
+<img src="https://images.ctfassets.net/6yom6slo28h2/fJUJrqHAzWweaJZvNXgWS/446631a4e2f0cc825292c982c12e173a/postgresql.jpg?w=150&h=300&fl=progressive&q=100&fm=jpg" alt="Image of PostgreSQL logo" width="150" height="100"> <img src="https://forums.visual-paradigm.com/uploads/default/original/2X/6/6d10753eda994cb828d6d182304d2c9929ae85c1.png" alt="Image of Visual Paradigm logo" width="150" height="100">
+
+## Database structure
+The database consists of 4 linked tables:
+
+- **tickets** — Main table storing all support requests with status, priority and more
+- **users** — The table including all the employees who raise tickets and are each classified by their department
+- **agents** — The support team members assigned to resolve tickets
+- **categories** — The table used to classify each of ticket categories specific to SaaS support
+
+### Entity relationship diagram
